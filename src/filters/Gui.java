@@ -568,6 +568,7 @@ public class Gui extends javax.swing.JFrame {
         originalLab.setSize(oimg.getWidth(originalLab),oimg.getHeight(originalLab));
         panel.setSize(originalLab.getSize());
         panel.add(originalLab);
+        panel.revalidate();
         panel.repaint();
     }
     private boolean brcontr(JSlider element, int type){
@@ -639,6 +640,7 @@ public class Gui extends javax.swing.JFrame {
         }
         mainBox.setVisible(true);
         matrix.add(mainBox,"Center");
+        matrix.revalidate();
         matrix.repaint();
         matrix.setVisible(true);
 //        System.out.println(textFields.get(0).get(0).isShowing());
